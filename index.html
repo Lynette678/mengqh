@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qianhui</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .head {
+            font-size: 80px;
+            color: white;
+            padding: 30px;
+            font-weight: bolder;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .home {
+            background-image:
+                linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)),
+                url(./images/WechatIMG188.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: top calc(-15vh) center;
+            height: 100vh;
+            background-attachment: local;
+
+        }
+
+        .home p {
+            font-size: 23px;
+            padding: 30px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            width: 900px;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        .home h1 {
+            color: white;
+            font-size: 80px;
+        }
+
+
+        .smallheader {
+            font-size: 12px;
+            font-family: Arial, Helvetica, sans-serif;
+            width: 450px;
+            display: flex;
+            justify-content: space-between;
+            margin-left: 30px;
+            margin-bottom: 10px;
+
+
+        }
+
+
+        .mainpage {
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            justify-content: space-around;
+            gap: 30px;
+            margin: 30px;
+            margin-top: 0;
+            margin-bottom: 0;
+            overflow: scroll;
+
+        }
+
+
+        .bigheader {
+            font-size: 40px;
+            margin-top: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+            margin-left: 60px;
+        }
+
+        img {
+            height: 280px;
+            width: 450px;
+            margin: 30px;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        .content {
+            font-size: 15px;
+            width: 450px;
+            text-align: justify;
+            margin-left: 30px;
+            line-height: 16px;
+            margin-top: 0;
+        }
+
+        a {
+            font-size: 20px;
+            color: aqua;
+            font-size: 10px;
+
+        }
+
+        a:hover {
+            color: white;
+        }
+
+
+        .contact {
+            margin: 0 auto;
+            background-color: black;
+            height: 200px;
+            display: flex;
+            justify-content: space-evenly;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        .extra {
+            margin: 50px;
+            font-size: 13px;
+            margin-bottom: 10px;
+            color: white;
+
+
+        }
+
+        .contact p {
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            font-size: 13px;
+
+
+        }
+
+        body {
+            color: white;
+            background-color: black;
+        }
+
+        .copyright {
+
+            height: 30px;
+            text-align: center;
+            background-color: black;
+            color: white;
+            font-size: 13px;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+
+        /* 筛选模块整体样式 */
+        .filter-buttons {
+            margin-bottom: 20px;
+            margin-left: 60px;
+            /* 上下间距，和上下模块分隔开 */
+            display: flex;
+            /* 按钮横向排列 */
+            gap: 20px;
+            /* 按钮之间的间距 */
+            align-items: center;
+        }
+
+        /* 筛选按钮样式（按钮状） */
+        .filter-btn {
+            /* 核心：按钮外观 */
+            padding: 1px 9px;
+            background-color: #f0f0f0bc;
+            /* 浅灰色背景，可自定义 */
+            border: 1px solid #dddddd17;
+            /* 边框 */
+            border-radius: 5px;
+            /* 圆角，更像按钮 */
+            font-size: 12px;
+            color: #000;
+
+            /* 核心：禁用点击交互 */
+            pointer-events: none;
+            /* 完全禁用点击、hover等交互 */
+            cursor: default;
+            /* 鼠标指针变为默认样式，而非手型 */
+
+            /* 可选：优化视觉效果 */
+            white-space: nowrap;
+            /* 防止文字换行 */
+        }
+
+        /* 可选：如果想要突出某个默认选中的标签，可加这个类 */
+        .filter-btn.active {
+            background-color: #484848d1;
+            /* 蓝色背景 */
+            color: white;
+            /* 白色文字 */
+            border-color: #000;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="home">
+        <div class="head">Hello, I'm Qianhui.</div>
+        <p>A data-driven thinker passionate about visual storytelling, interactive dashboards, and making complex data
+            accessible to everyone.</p>
+        <p>Graduated from <strong>MSc Design Informatics</strong> at the <strong>University of Edinburgh</strong>.</p>
+    </div>
+
+
+    <br>
+    <div class="bigheader">Featured Projects</div>
+    <br>
+
+    <div class="filter-buttons">
+        <span class="filter-btn"><strong>UI/UX</strong></span>
+        <span class="filter-btn"><strong>DATA VISUALIZATION</strong></span>
+        <span class="filter-btn"><strong>INSTALLATION</strong></span>
+    </div>
+
+    <div class="mainpage">
+
+        <div class="0">
+            <div class="smallheader">
+                <div>Sites: Surfaced or Submerged</div>
+                <div>04/2025-08/2025</div>
+            </div>
+            <img src="./images/截屏2026-02-24 10.29.51.png" alt="Scotland_on_the_web img">
+            <br>
+            <div class="content">
+                <a href="https://feelingdata.studio/sites-surfaced-or-submerged" target="_blank">Click for project
+                    website.</a>
+                <br>
+                <a href="./images/scotlandontheweb_usertesting.mp4" target="_blank">Click for user testing
+                    video.</a>
+                <br>
+                <br>
+                <strong>Introduction:</strong>This motion-activated piece explores how the topics of Scotland’s web
+                content have shifted over time, from when each site was added to the Scotland on the Internet collection
+                to whether it remains online or has vanished into dead links.
+                <br>
+                <br>
+                Here, you step into the mind of the archivist, influenced by current events, trends, curiosity, and
+                personal judgement. The visualization is not only about data patterns but also about perspective. What
+                gets saved, and what doesn’t, depends on who is looking.
+            </div>
+
+        </div>
+        <div class="1">
+            <div class="smallheader">
+                <div>River's Breath</div>
+                <div>02/2025-05/2025</div>
+            </div>
+            <img src="./images/Screenshot 2025-05-13 at 10.21.07.png" alt="river's breath img">
+            <br>
+            <div class="content">
+                <a href="./images/copy_5243517F-D16D-44E3-91F0-CC4AD6FEEB43.mp4" target="_blank">Click for the
+                    video.</a>
+                <br>
+                <br>
+                <strong>Introduction:</strong> “River’s Breath” is an interactive installation that simulates the
+                delicate balance of a mussel’s river habitat. A suspended, moving fabric mimics the flowing water, while
+                TouchDesigner visualizes oxygen through drifting particles. Human proximity alters the flow — too close,
+                and the balance breaks. The breath of the river is disturbed.
+                <br>
+                <br>
+                This work reflects on the sensitivity of natural systems and how easily they shift in response to our
+                presence, inviting a quiet awareness of how life depends on subtle, invisible rhythms.
+            </div>
+
+        </div>
+
+
+
+        <div class="2">
+
+            <div class="smallheader">
+                <div>Ultimo</div>
+                <div>03/2025-04/2025</div>
+            </div>
+
+            <img src="./images/Screenshot%202025-05-13%20at%2015.07.32.png" alt="ultimo img">
+
+
+
+            <br>
+            <div class="content">
+                <a href="https://www.figma.com/proto/NvbXAPcBxPau6pgxptMUpV/Human-Factors?node-id=76-356&t=hcCTywFE9qaGjb8D-1"
+                    target="_blank">Explore the live prototype built in Figma: here.</a>
+                <br><br>
+                <strong>Introduction:</strong> Investigating the challenges international students face in sustaining
+                motivation for health, fitness, and nutrition in an increasingly digital world. Our design takes a
+                unique approach by integrating training, running, and nutrition into a single, seamless platform—an area
+                where existing apps often remain fragmented.
+            </div>
+
+
+        </div>
+
+
+
+        <div class="3">
+
+            <div class="smallheader">
+                <div>Human Factors in User Research</div>
+                <div>03/2025-04/2025</div>
+            </div>
+
+            <img src="./images/userreseach.png" alt="rollbot img">
+
+            <br>
+            <div class="content">
+                <a href="./userreseach.html" target="_blank">Click for details.</a>
+                <br><br>
+                <strong>Introduction:</strong>
+                This study aims to propose user experience (UX)-driven redesign suggestions for the Nike Run Club (NRC)
+                application. To achieve that, the study is conducted in two steps. First, it explores international
+                college students’ exercise habits and interactions with fitness applications through user interviews,
+                usability tests, and cultural probes, gaining insight into their personal experiences. Second, based on
+                these findings, the study develops redesign recommendations for NRC, with a focus on enhancing user
+                experience under the guidance of human factors.
+                <br>
+                To address research objectives and research questions, I employed a qualitative approach and integrated
+                one each of say, do and make methods. The link above leads to the detailed content.
+            </div>
+
+
+        </div>
+
+        <div class="4">
+            <div class="smallheader">
+                <div>Fringe Festival 2024 Dynamics</div>
+                <div>10/2024-11/2024</div>
+            </div>
+
+            <img src="./images/Screenshot 2025-05-13 at 10.24.35.png" alt="dynamic img">
+
+
+            <div class="content">
+                <a href="./images/A3_video demo.mp4" target="_blank">Click for the video.</a>
+                <br><br>
+                <strong>Introduction:</strong> Large-scale events like the Edinburgh Fringe Festival create urban
+                congestion and crowd distribution, straining city infrastructure and impacting residents and visitors.
+                Our project addresses this by visualizing crowd density patterns using ticket purchase data, developing
+                a spatio-temporal model to track movement across the city. This model aids decision-making and supports
+                future optimization of venue arrangements.
+            </div>
+
+        </div>
+        <div class="5">
+
+            <div class="smallheader">
+                <div>Rollbot</div>
+                <div>10/2024-11/2024</div>
+            </div>
+
+            <img src="./images/IMG_6832.JPG" alt="rollbot img">
+
+            <br>
+            <div class="content">
+                <a href="./images/Group3_video.mp4" target="_blank">Click for the video.</a>
+                <br><br>
+                <strong>Introduction:</strong>
+                Overuse is a surprisingly common habit, whether it’s genuinely needed for cleaning or simply mindless
+                behavior. This realization sparked an unconventional idea: imagine a tissue box that doesn’t just hold
+                paper but adds a playful twist to the experience.
+                <br>
+                <br>
+                Therefore, we designed a tissue box, RollBot, transforming this ordinary object into an amusing
+                companion, injecting hilarity and mischief into every interaction. If you pull gently, everything is
+                fine. But pull too much, and it will glare at you with glowing red eyes. If the overuse persists, it
+                clamps its teeth shut, refusing to cooperate. It’s like having a mischievous prankster lurking in your
+                bathroom!
+            </div>
+
+
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+    <div class="contact">
+        <div class="left">
+            <div class="extra"><strong>Contact</strong></div>
+            <p>mengqianhuijn24@163.com</p>
+            <p>(+86) 13256123001</p>
+        </div>
+
+        <div class="right">
+            <div class="extra"><strong>Location</strong></div>
+            <p>114 Dundee Street</p>
+            <p>Edinburgh, EH11 1AB</p>
+        </div>
+    </div>
+
+
+
+    <div class="copyright">© 2025 Qianhui Meng. All rights reserved.</div>
+
+
+
+
+
+
+</body>
+
+</html>
