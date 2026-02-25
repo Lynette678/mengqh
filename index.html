@@ -67,6 +67,7 @@
             font-family: Arial, Helvetica, sans-serif;
             display: flex;
             justify-content: space-around;
+            /* flex-wrap: wrap; */
             gap: 30px;
             margin: 30px;
             margin-top: 0;
@@ -252,6 +253,91 @@
         /* 悬停时显示文字 */
         .project-img-container a:hover .hover-text {
             opacity: 0.8;
+        }
+
+        /* 移动端适配：屏幕宽度≤768px（手机） */
+        @media (max-width: 768px) {
+
+            /* 首页大标题字体缩小 */
+            .head {
+                font-size: 36px;
+                padding: 20px;
+            }
+
+            /* 首页描述文本适配 */
+            .home p {
+                font-size: 16px;
+                padding: 20px;
+                width: 100%;
+                /* 取消固定宽度，占满屏幕 */
+            }
+
+            /* 大标题（Featured Projects）适配 */
+            .bigheader {
+                font-size: 24px;
+                margin-left: 20px;
+            }
+
+            /* 筛选按钮容器适配 */
+            .filter-buttons {
+                margin-left: 20px;
+                flex-wrap: wrap;
+                /* 按钮太多时自动换行 */
+                gap: 10px;
+            }
+
+            /* 项目容器适配（核心） */
+            .mainpage {
+                margin: 10px;
+                gap: 20px;
+            }
+
+            /* 项目图片适配 */
+            .project-img-container img,
+            img {
+                width: 100%;
+                /* 占满屏幕宽度 */
+                height: auto;
+                /* 保持宽高比 */
+                margin: 0;
+                /* 清除原有margin */
+            }
+
+            /* 项目小头部适配 */
+            .smallheader {
+                width: 100%;
+                padding: 0 10px;
+                margin-left: 0;
+                font-size: 11px;
+            }
+
+            /* 项目内容文本适配 */
+            .content {
+                width: 100%;
+                padding: 0 10px;
+                margin-left: 0;
+                font-size: 14px;
+            }
+
+            /* 联系栏适配 */
+            .contact {
+                flex-direction: column;
+                /* 从横向改为纵向排列 */
+                height: auto;
+                padding: 20px 0;
+            }
+
+            /* 联系栏文本位置 */
+            .left,
+            .right {
+                margin: 10px 0;
+                text-align: center;
+            }
+
+            .extra {
+                margin: 10px 0;
+                text-align: center;
+            }
         }
     </style>
 </head>
